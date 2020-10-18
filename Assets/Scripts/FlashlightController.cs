@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FlashlightController : MonoBehaviour
 {
-    public GameObject _light;
+    private GameObject _light;
     private bool _status;
     private bool _mouseInput, _tInput;
 
