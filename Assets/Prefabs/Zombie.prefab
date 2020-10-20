@@ -46,9 +46,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08be5403c1294994fa450ffae306a1e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyChaseDistance: 7
-  _speed: 4
-  _lookSpeed: 8
+  _chaseDistance: 7
+  _chaseSpeed: 4
+  _acceleration: 10
+  _lookSpeed: 12
+  _patrolSpeed: 0.5
+  _moveSpot: {fileID: 0}
+  _startWaitTime: 3
 --- !u!195 &8555010122324045414
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -138,7 +142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4493914613880827488, guid: 6dc4cf4496348884d8ee27743ae38562, type: 3}
       propertyPath: m_Name
-      value: Zombie
+      value: Model
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dc4cf4496348884d8ee27743ae38562, type: 3}
